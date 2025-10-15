@@ -1,0 +1,97 @@
+header {
+    background-color: gray;
+    margin: 25px;
+    padding: 25px;
+    font-size: 25px;
+}
+#navList li {
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: darkgray;
+    border: 2px solid black;
+}
+#navList li:hover {
+    background-color: lightgray;
+}
+#navList {
+    display: flex;
+}
+#aboutP {
+    margin: 15px;
+    font-size: 30px;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#bottomNav {
+    border: 4px solid blue;
+    text-align:center;
+    padding:0px;
+}
+#bottomNav a{
+    font-size:50px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+#bottomNav a:hover{
+    background-color:aqua;
+}
+header {
+    margin: 0px;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+body.dark-theme {
+    background-color: black;
+    color: white;
+}   
+a.dark-theme {
+    color:white;
+}
+#tempo a.dark-theme{
+    color:white
+}
+#projectList {
+    display:flex;
+}
+#projectList li{
+    list-style-type: none;
+}
+#projectList a {
+    color: blue;
+    text-decoration: underline;
+}
+#tempo  {
+    color:blue;
+    text-decoration: underline;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.left {
+    flex: 1; 
+}
+.right img {
+    max-width: 200px; 
+    height: auto;
+    object-fit: cover;
+}
+.flexbox nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+.right {
+    flex: 0 0
+}
