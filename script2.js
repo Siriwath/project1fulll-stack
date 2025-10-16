@@ -42,16 +42,15 @@ form.addEventListener("submit", (e) => {
 const toggle = document.getElementById("dark-toggle");
 let x = 0;
 toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  if (!(x)){
-    toggle.textContent = "Light Mode"
-    x = 1
-  }
-  else{
-    toggle.textContent = "Dark Mode"
-    x = 0
-  }
-
+    document.body.classList.toggle("dark-mode");
+    if (!(x)){
+        toggle.textContent = "Light Mode"
+        x = 1
+    }
+    else{
+        toggle.textContent = "Dark Mode"
+        x = 0
+    }
 });
 
 const images = document.querySelectorAll(".image-gallery img");
@@ -59,13 +58,13 @@ const hintButton = document.getElementById("hint-button");
 let index = 0;
 
 hintButton.addEventListener("click", () => {
-  if (index < images.length) {
-    images[index].style.opacity = 1; 
-    index++;
-  }
-  if (index >= images.length) {
-    index = 0;
-  }
+    if (index < images.length) {
+        images[index].style.opacity = 1; 
+        index++;
+    }
+    if (index >= images.length) {
+        index = 0;
+    }
 });
 
 const hintHider = document.getElementById("hint-hide")
