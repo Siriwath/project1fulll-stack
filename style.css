@@ -47,15 +47,13 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 body.dark-theme {
-    background-color: black;
-    color: white;
-}   
-a.dark-theme {
-    color:white;
+  filter: invert(1) hue-rotate(180deg);
+  background-color: black;
 }
-#tempo a.dark-theme{
-    color:white
+body.dark-theme img {
+  filter: invert(1) hue-rotate(180deg) !important;
 }
+
 #projectList {
     display:flex;
 }
