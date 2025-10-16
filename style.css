@@ -51,7 +51,10 @@ body.dark-theme {
   background-color: black;
 }
 body.dark-theme img {
-  filter: invert(1) hue-rotate(180deg) !important;
+  filter: invert(1) hue-rotate(180deg);
+}
+body.dark-theme iframe {
+    filter: invert(1) hue-rotate(180deg);
 }
 
 #projectList {

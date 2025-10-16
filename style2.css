@@ -43,3 +43,19 @@ body.dark-mode img {
 body {
     font-family: 'Exo 2', sans-serif;
 }
+.image-gallery {
+    display: flex;           /* arrange images in a row */
+    overflow-x: auto;        /* allow horizontal scroll */
+    gap: 10px;               /* space between images */
+    padding: 10px;
+    scroll-behavior: smooth; /* smooth scrolling */
+}
+
+.image-gallery img {
+    height: 40vh;        /* 40% of viewport height */
+    width: auto;
+    object-fit: cover;
+    opacity: 0;                  /* start hidden */
+    transition: opacity 1s ease;
+}
+

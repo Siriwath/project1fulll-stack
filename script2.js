@@ -54,3 +54,27 @@ toggle.addEventListener("click", () => {
 
 });
 
+const images = document.querySelectorAll(".image-gallery img");
+const hintButton = document.getElementById("hint-button");
+let index = 0;
+
+hintButton.addEventListener("click", () => {
+  if (index < images.length) {
+    images[index].style.opacity = 1; 
+    index++;
+  }
+  if (index >= images.length) {
+    index = 0;
+  }
+});
+
+const hintHider = document.getElementById("hint-hide")
+
+    hintHider.addEventListener("click", ()=>{
+        index = 0
+        for (x in images){
+            images[x].style.opacity = 0;
+        }
+    });
+
+
